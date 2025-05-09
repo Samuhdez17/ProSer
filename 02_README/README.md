@@ -24,3 +24,9 @@ Visítanos en 👉 [ProSer Web](https://[ENLACE_AQUI]) 📩
 
 ---
    *ProSer - Transformando la enseñanza digital* 
+
+   
+hay que añadir:
+Fecha de entrega
+Software utilizado
+Instrucciones para ver el proyecto localmente
