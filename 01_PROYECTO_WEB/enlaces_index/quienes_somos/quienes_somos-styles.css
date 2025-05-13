@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.persona {
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.persona:hover {
+    background-color: #007bff;
+    color: white;
+}
