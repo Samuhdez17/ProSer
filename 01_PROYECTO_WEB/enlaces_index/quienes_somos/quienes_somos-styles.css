@@ -3,8 +3,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
     min-height: 100vh;
     margin: 0;
+
     font-family: Arial, sans-serif;
 }
 
@@ -12,12 +14,17 @@ body {
     display: inline-block;
     margin: 15px;
     padding: 20px;
+
     border: 1px solid black;
+    border-radius: 20px;
     width: 200px;
     height: 200px;
+
     text-align: center;
     vertical-align: middle;
-    transition: background-color 0.3s ease, color 0.3s ease;
+
+    transition: all 0.3s ease;
+
     position: relative;
     overflow: hidden;
 }
@@ -25,4 +32,37 @@ body {
 .persona:hover {
     background-color: #007bff;
     color: white;
+}
+
+/* Ocultar el contenido original cuando se pasa el cursor */
+.persona:hover p {
+    visibility: hidden;
+}
+
+/* Mostrar el texto personalizado al pasar el cursor */
+.persona::after {
+    content: attr(data-hover);
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%); /* centra el texto */
+    font-size: 16px;
+    font-weight: bold;
+
+    text-align: center;
+    white-space: pre-wrap; /* Permite interpretar saltos de línea */
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: visibility 0s, opacity 0.3s;
+    color: white;
+}
+
+/* Hacer visible el texto personalizado */
+.persona:hover::after {
+    visibility: visible;
+    opacity: 1;
 }
