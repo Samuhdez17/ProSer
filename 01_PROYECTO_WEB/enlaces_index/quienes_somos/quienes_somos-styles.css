@@ -20,14 +20,15 @@ body {
 
 /* Estilo del header */
 header {
-    margin-bottom: 20px; /* Espacio entre el título y las tarjetas */
+    text-align: center;
+    margin-bottom: 120px; /* Espacio entre el título y las tarjetas */
 }
 
 header h1 {
     font-size: 48px;
     color: #ffffff; /* Opcional: cambia el color del texto para resaltar */
     text-align: center;
-    margin-bottom: 170px;
+    padding-bottom: 5px;
 }
 
 /* Contenedor de las tarjetas */
@@ -93,4 +94,18 @@ header h1 {
 .persona:hover::after {
     visibility: visible;
     opacity: 1;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: left;
+    padding: 2px 0;
+    width: 100%;
+
+    background-color: #0A70A7; /* Fondo opcional para destacar el footer */
+    color: #ffffff; /* Texto en color blanco */
+    font-size: 16px;
+
+    /* Línea separadora */
+    border-top: 2px solid #54A6D8;
 }
