@@ -1,0 +1,16 @@
+div {
+    background-color: #BDE7FE;
+}
+
+p {
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+}
+
+.secciones {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    gap: 32px;
+}
