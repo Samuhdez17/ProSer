@@ -1,24 +1,53 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    min-height: 100vh;
-    margin: 0;
-
+* {
     font-family: Arial, sans-serif;
 }
 
-.persona {
-    display: inline-block;
-    margin: 15px;
-    padding: 20px;
+/* Estilo general del body */
+body {
+    display: flex;
+    flex-direction: column; /* Apila los elementos de arriba hacia abajo */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    min-height: 100vh;
+    margin: 0;
 
-    border: 1px solid black;
+    /* Imagen de fondo */
+    background-image: url('../../img/quienes-somos/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilo del header */
+header {
+    margin-bottom: 20px; /* Espacio entre el título y las tarjetas */
+}
+
+header h1 {
+    font-size: 48px;
+    color: #ffffff; /* Opcional: cambia el color del texto para resaltar */
+    text-align: center;
+    margin-bottom: 170px;
+}
+
+/* Contenedor de las tarjetas */
+.tarjetas {
+    display: flex; /* Hace que las tarjetas estén en fila horizontal */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten si no caben en una línea */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilo individual de cada tarjeta */
+.persona {
+    display: grid;
+    margin: 0; /* Elimina márgenes adicionales; se maneja con gap */
+    padding: 20px;
+    border: 2px solid #0056b3;
     border-radius: 20px;
     width: 200px;
     height: 200px;
+    background-color: #BDE7FE;
 
     text-align: center;
     vertical-align: middle;
@@ -30,11 +59,10 @@ body {
 }
 
 .persona:hover {
-    background-color: #007bff;
     color: white;
 }
 
-/* Ocultar el contenido original cuando se pasa el cursor */
+/* Ocultar el contenido original de la tarjeta cuando se pasa el cursor */
 .persona:hover p {
     visibility: hidden;
 }
@@ -47,7 +75,7 @@ body {
     top: 50%;
     left: 50%;
 
-    transform: translate(-50%, -50%); /* centra el texto */
+    transform: translate(-50%, -50%); /* Centra el texto */
     font-size: 16px;
     font-weight: bold;
 
