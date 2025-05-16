@@ -26,9 +26,13 @@ header {
 
 header h1 {
     font-size: 48px;
-    color: #ffffff; /* Opcional: cambia el color del texto para resaltar */
+    color: #0A70A7;
     text-align: center;
     padding-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
 }
 
 /* Contenedor de las tarjetas */
@@ -97,15 +101,35 @@ header h1 {
 }
 
 footer {
+    position: relative;
     margin-top: 50px;
-    text-align: left;
-    padding: 2px 0;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 98.5%;
 
     background-color: #0A70A7; /* Fondo opcional para destacar el footer */
-    color: #ffffff; /* Texto en color blanco */
+    color: #AD9F72; /* Texto en color blanco */
     font-size: 16px;
 
     /* Línea separadora */
     border-top: 2px solid #54A6D8;
+    padding: 10px; /* Espaciado para que no quede tan ajustado */
 }
+
+footer a {
+    color: #E9DCBA;
+    text-decoration: none;
+
+    display: inline-block;
+    margin: 0 10px;
+
+    transition: transform 0.3s ease;
+}
+
+footer a:hover {
+    transform: translateY(-5px);
+}
+
