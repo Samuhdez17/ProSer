@@ -4,10 +4,10 @@ Nombre de la empresa ficticia y nombre empresa cliente.
 
 
 Nombre completo y rol de cada integrante.
-- María Buzarhon Navarro:
-- Samuel Hernández Guerrero:
-- Iván Barreno Tejero:
-- Iker Aimar Gómez Espinosa Muñoz:
+- María Buzarhon Navarro: diseñadora Web.
+- Samuel Hernández Guerrero: maquetador HTML.
+- Iván Barreno Tejero: responsable de presentación.
+- Iker Aimar Gómez Espinosa Muñoz: jefe de producto.
 
 Fecha de entrega parcial.
 17/05/2025
