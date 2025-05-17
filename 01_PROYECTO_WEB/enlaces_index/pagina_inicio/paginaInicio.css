@@ -1,1 +1,115 @@
+:root {
+    --fondoTodo: #0b0f1a;
+    --fondoPequeño: #032f49;
+    --fondoTarjetas: #0A70A7;
+    --letras: #ffffff;
+    --fg-2: #d3d3d3;
+    --brand: #66d9ef;
+    --titulos: #AD9F72;
+    --ok: #54A6D8;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+    color: var(--fondoTodo);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fondoTodo);
+    color: #333;
+}
+
+p {
+    color: var(--letras);
+}
+#header {
+    background: var(--fondoPequeño);
+    color: var(--letras);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: var(--letras);
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav li {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: var(--fondoPequeño);
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+.submenu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+.nav li:hover .submenu {
+    display: block;
+}
+
+section {
+    padding: 2rem;
+}
+
+.hero {
+    background: var(--fondoTarjetas);
+    text-align: center;
+}
+
+.services,
+.about {
+    background: var(--fondoTarjetas);
+    margin-top: 1rem;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.service {
+    background: var(--brand);
+    color: var(--letras);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 4px;
+}
+#contacto {
+    background: var(--fondoPequeño);
+    color: var(--letras);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1rem;
+}
+
  
