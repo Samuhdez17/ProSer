@@ -56,15 +56,12 @@ header p {
 
     text-align: center;
     vertical-align: middle;
+    font-weight: bold;
 
     transition: all 0.3s ease;
 
     position: relative;
     overflow: hidden;
-}
-
-.persona:hover {
-    color: white;
 }
 
 /* Ocultar el contenido original de la tarjeta cuando se pasa el cursor */
@@ -82,7 +79,6 @@ header p {
 
     transform: translate(-50%, -50%); /* Centra el texto */
     font-size: 16px;
-    font-weight: bold;
 
     text-align: center;
     white-space: pre-wrap; /* Permite interpretar saltos de línea */
@@ -91,7 +87,6 @@ header p {
     opacity: 0;
 
     transition: visibility 0s, opacity 0.3s;
-    color: white;
 }
 
 /* Hacer visible el texto personalizado */
