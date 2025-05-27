@@ -75,12 +75,12 @@ header p {
     position: absolute;
 
     top: 50%;
-    left: 50%;
+    left: 100px;
 
-    transform: translate(-50%, -50%); /* Centra el texto */
+    transform: translate(-38%, -50%); /* Centra el texto */
     font-size: 16px;
 
-    text-align: center;
+    text-align: left;
     white-space: pre-wrap; /* Permite interpretar saltos de línea */
 
     visibility: hidden;
