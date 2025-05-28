@@ -29,3 +29,32 @@
   </div>
 </body>
 </html>
+
+<script>
+  function exprtarContacto() {
+    var nombre = document.getElementById('nombre').value;
+    var correoElectronico = document.getElementById('email').value;
+    var asunto = document.getElementById('asunto').value;
+    var mensaje = document.getElementById('mensaje').value;  
+
+    var contenido = 
+      "Nombre: " + nombre + "\n" +
+      "Correo Electrónico: " + correoElectronico + "\n" +
+      "Asunto: " + asunto + "\n" +
+      "Mensaje: " + mensaje + "\n";
+
+    var enlace = document.createElement("a");
+    enlace.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(contenido));
+    enlace.setAttribute("download", "ContactoProSer.txt");
+    enlace.style.display = "none";
+    
+    document.body.appendChild(enlace);
+    enlace.click();
+    document.body.removeChild(enlace);
+  }
+
+  document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    exprtarContacto();
+  });
+</script>
