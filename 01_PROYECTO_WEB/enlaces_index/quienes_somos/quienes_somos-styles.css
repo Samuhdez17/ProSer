@@ -1,7 +1,6 @@
 * {
     font-family: Arial, sans-serif;
 }
-
 /* Estilo general del body */
 body {
     display: flex;
@@ -16,6 +15,10 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+body, html {
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilo del header */
@@ -95,36 +98,23 @@ header p {
     opacity: 1;
 }
 
+/* Asegura que el footer ocupe el ancho completo y usa Flexbox */
 footer {
-    position: relative;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    width: 98.5%;
-
-    background-color: #0A70A7; /* Fondo opcional para destacar el footer */
-    color: #AD9F72; /* Texto en color blanco */
-    font-size: 16px;
-
-    /* Línea separadora */
-    border-top: 2px solid #54A6D8;
-    padding: 10px; /* Espaciado para que no quede tan ajustado */
+  width: 100%;
+  background: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-footer a {
-    color: #E9DCBA;
-    text-decoration: none;
-
-    display: inline-block;
-    margin: 0 10px;
-
-    transition: transform 0.3s ease;
+/* Estilo para la imagen del footer, igual que las social icons */
+.footer-image {
+  height: 40px;
+  width: auto;
+  transition: transform 0.3s;
+  padding-left: 50px;
 }
 
-footer a:hover {
-    transform: translateY(-5px);
+.footer-image:hover {
+  transform: scale(1.2);
 }
-
