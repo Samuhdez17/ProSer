@@ -7,3 +7,5 @@ El grupo está formado por:
 - Iker Aimar Gómez Espinosa Muñoz
 
 Para este proyecto se ha hecho uso de HTML y CSS de la manera más pura para lograr una buena presentación de la página web.
+
+Se hace uso de Java Script en las páginas de los cursos y en la página de contacto.
