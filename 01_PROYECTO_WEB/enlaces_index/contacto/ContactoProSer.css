@@ -4,6 +4,25 @@ body {
     margin: 0;
     padding: 0;
   }
+  .header-logo {
+  position: fixed;
+  top: 20px;   /* Ajusta el valor para que quede donde desees respecto del borde superior */
+  left: 20px;  /* Ajusta según necesites */
+  z-index: 1000;  /* Asegura que se quede encima de otros elementos */
+}
+
+/* Aplica el mismo estilo que las social icons */
+.header-logo img {
+  height: 40px;      /* Mismo tamaño que las social icons */
+  width: auto;
+  transition: transform 0.3s;
+  border-radius: 0;
+  background: none;
+}
+
+.header-logo img:hover {
+  transform: scale(1.2);
+}
   
   .formulario-contacto {
     max-width: 500px;
