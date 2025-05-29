@@ -1,0 +1,120 @@
+* {
+    font-family: Arial, sans-serif;
+}
+/* Estilo general del body */
+body {
+    display: flex;
+    flex-direction: column; /* Apila los elementos de arriba hacia abajo */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    min-height: 100vh;
+    margin: 0;
+
+    /* Imagen de fondo */
+    background-image: url('../../img/quienes-somos/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del header */
+header {
+    text-align: center;
+    margin-bottom: 120px; /* Espacio entre el título y las tarjetas */
+}
+
+header h1 {
+    font-size: 48px;
+    color: #0A70A7;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Contenedor de las tarjetas */
+.tarjetas {
+    display: flex; /* Hace que las tarjetas estén en fila horizontal */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten si no caben en una línea */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilo individual de cada tarjeta */
+.persona {
+    display: grid;
+    margin: 0; /* Elimina márgenes adicionales; se maneja con gap */
+    padding: 20px;
+    border: 2px solid #0056b3;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #BDE7FE;
+
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ocultar el contenido original de la tarjeta cuando se pasa el cursor */
+.persona:hover p {
+    visibility: hidden;
+}
+
+/* Mostrar el texto personalizado al pasar el cursor */
+.persona::after {
+    content: attr(data-hover);
+    position: absolute;
+
+    top: 50%;
+    left: 100px;
+
+    transform: translate(-38%, -50%); /* Centra el texto */
+    font-size: 16px;
+
+    text-align: left;
+    white-space: pre-wrap; /* Permite interpretar saltos de línea */
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: visibility 0s, opacity 0.3s;
+}
+
+/* Hacer visible el texto personalizado */
+.persona:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Asegura que el footer ocupe el ancho completo y usa Flexbox */
+footer {
+  width: 100%;
+  background: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Estilo para la imagen del footer, igual que las social icons */
+.footer-image {
+  height: 40px;
+  width: auto;
+  transition: transform 0.3s;
+  padding-left: 50px;
+}
+
+.footer-image:hover {
+  transform: scale(1.2);
+}

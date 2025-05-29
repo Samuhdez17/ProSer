@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de HTML</title>
+    <link rel="stylesheet" href="WEB.css">
+
+    <link rel="icon" href="../../../img/Logo-ProSer_recortado.jpg">
+</head>
+
+<body>
+<button id="themeToggle">Cambiar tema</button>
+<a href="../../../index.html" class="header-logo">
+    <img src="../../../img/atras.png" alt="Inicio" />
+</a>
+<div class="container">
+    <div class="header">
+        <h1>Curso de HTML</h1>
+        <p>Crea tu primera página web con HTML.</p>
+
+        <div class="progress-container">
+            <label>Progreso del curso</label>
+            <div class="progress-bar">
+                <div class="progress" style="width: 1%;"></div>
+            </div>
+            <p>0 de 41 ejercicios completados</p>
+        </div>
+
+        <div class="badges">
+            <h3>Insignias</h3>
+            <span class="badge unlocked">🌍</span>
+            <span class="badge unlocked">🚀</span>
+            <span class="badge locked">🔒</span>
+            <span class="badge locked">🔒</span>
+        </div>
+
+        <div class="xp-level">
+            <p>Nivel 1</p>
+            <p>XP: 0 / 435</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Elementos</h2>
+        <div class="exercise"><span>Estrella fugaz</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Periódico</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Mascota perdida</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Artista favorito</span><button>¡Hecho!</button></div>
+    </div>
+
+    <div class="section">
+        <h2>Estructura</h2>
+        <div class="exercise"><span>Árbol familiar</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Artículo de Wiki</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Lorem Ipsum</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Power Rangers</span><button>¡Hecho!</button></div>
+
+    </div>
+
+    <div class="section">
+        <h2>Forms</h2>
+        <div class="exercise"><span>Google</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Crear cuenta versión 1</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Crear cuenta versión 2</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Página de contacto</span><button>¡Hecho!</button></div>
+    </div>
+
+    <div class="section">
+        <h2>Semántica HTML</h2>
+        <div class="exercise"><span>Blog personal</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Cabecera</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Pie de página</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Publicaciones en un blog</span><button>¡Hecho!</button></div>
+        <div class="exercise"><span>Toques finales</span><button>¡Hecho!</button></div>
+
+    </div>
+
+</div>
+
+<script>
+    const toggle = document.getElementById("themeToggle");
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("claro");
+    });
+</script>
+</body>
+</html>
